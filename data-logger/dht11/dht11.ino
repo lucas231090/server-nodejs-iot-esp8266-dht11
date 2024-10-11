@@ -13,7 +13,7 @@ const char* serverName = "http://192.168.25.13:3333/sensores";
 
 // Timer para controlar a frequência das requisições (2 segundos)
 unsigned long lastTime = 0;
-unsigned long timerDelay = 2000;
+unsigned long timerDelay = 10000;
 
 // Configurações do sensor DHT11
 #define DHTTYPE DHT11
@@ -86,7 +86,7 @@ void loop() {
       Serial.print("Código de resposta HTTP: ");
       Serial.println(httpResponseCode);
 
-      if (httpResponseCode == 200) {
+      if (httpResponseCode == 201) {
         Serial.println("API conectada...");
         Serial.println("Dados gravados com sucesso.");
       } else {
