@@ -3,9 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard Prof Lucas</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <h1>Aqui vai o front-end da aplicação!!!</h1>
+    <header>
+      <h1>DHT 11 Dashboard - Professor Lucas</h1>
+    </header>
+
+    <main>
+      <section id="sensor-data">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>User ID</th>
+              <th>IP Arduino</th>
+              <th>Tipo Medida 1</th>
+              <th>Unidade 1</th>
+              <th>Valor 1</th>
+              <th>Tipo Medida 2</th>
+              <th>Unidade 2</th>
+              <th>Valor 2</th>
+              <th>Modelo</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="sensor-table-body"></tbody>
+        </table>
+      </section>
+
+      <section id="chart-section">
+        <canvas id="sensorChart" width="300" height="150"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Feito com <span style="color: red">&hearts;</span> por
+        <a href="https://github.com/lucas231090" target="_blank"
+          >Professor Lucas</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
