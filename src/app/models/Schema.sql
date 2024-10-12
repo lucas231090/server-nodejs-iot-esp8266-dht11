@@ -1,3 +1,5 @@
+-- docker exec -it mysql mysql -u root -p --
+
 CREATE DATABASE IF NOT EXISTS sensores_db;
 USE sensores_db;
 
